@@ -1,4 +1,5 @@
 public class Board {
+    // Function to pretty print the game board
     public void print(int[] data) {
         // data will be 0 1 2
         // written as   3 4 5
@@ -10,22 +11,27 @@ public class Board {
                 {"3", String.valueOf(data[6]), String.valueOf(data[7]), String.valueOf(data[8])}};
         for (int row = 0; row < 4; row++) {
             for (int column = 0; column < 4; column++) {
-                // O == 0 (zero) ||| X == 1 (one)
-                if (board[row][column].equals("0")) {
-                    System.out.print("O" + " | ");
-                } else if (board[row][column].equals("5")) {
-                    System.out.print("X" + " | ");
-                } else {
-                    System.out.print(board[row][column] + " | ");
-                }
-
+                System.out.print(swapCharacters(board[row][column]) + " | ");
             }
             System.out.println("\n" + horizontalLine(16, '-'));
 
         }
     }
 
+    // Returns a string with specified character and length
     public String horizontalLine(int characterCount, char printCharacter) {
         return String.valueOf(printCharacter).repeat(Math.max(0, characterCount + 1));
     }
+
+    // Swaps characters from numbers to O & X
+    public String swapCharacters(String rawCharacter) {
+        return switch (rawCharacter) {
+            case "0" -> "O";
+            case "5" -> "X";
+            case "4" -> "Tie";
+            default -> rawCharacter;
+        };
+
+    }
+
 }

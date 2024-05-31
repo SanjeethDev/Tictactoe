@@ -1,7 +1,6 @@
 public class ValidateBoard {
 
     public int check(int[] data) {
-
         // row validation
         // take left value and check with center and right
         for (int row = 0; row < data.length; row+=3) {
@@ -13,7 +12,7 @@ public class ValidateBoard {
         // column validation
         // take the top value and check with middle and bottom
         for (int column = 0; column < 3; column++) {
-            if (data[column] == data[column+1] && data[column] == data[column+2]) {
+            if (data[column] == data[column+3] && data[column] == data[column+6]) {
                 return data[column];
             }
         }
@@ -26,6 +25,7 @@ public class ValidateBoard {
             return data[4];
         }
 
-        return 2;
+        // A Tie; can't assign numbers below 4
+        return 4;
     }
 }
