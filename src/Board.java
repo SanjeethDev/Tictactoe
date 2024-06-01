@@ -5,7 +5,7 @@ public class Board {
         // written as   3 4 5
         // 0-8 index    6 7 8 with outline being the guiders
         String[][] board = new String[][] {
-                {" ", "1", "2", "3"},
+                {" ", "A", "B", "C"},
                 {"1", String.valueOf(data[0]), String.valueOf(data[1]), String.valueOf(data[2])},
                 {"2", String.valueOf(data[3]), String.valueOf(data[4]), String.valueOf(data[5])},
                 {"3", String.valueOf(data[6]), String.valueOf(data[7]), String.valueOf(data[8])}};
@@ -29,6 +29,7 @@ public class Board {
             case "0" -> "O";
             case "5" -> "X";
             case "4" -> "Tie";
+            case "6" -> " ";
             default -> rawCharacter;
         };
 
