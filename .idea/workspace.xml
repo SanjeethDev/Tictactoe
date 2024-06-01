@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b62e8de-65e0-4636-9611-072099d701cd" name="Changes" comment="Fixed column validation">
+    <list default="true" id="7b62e8de-65e0-4636-9611-072099d701cd" name="Changes" comment="Finalization of the game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +25,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SanjeethDev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="289760fd-8089-4d56-93aa-8d45d926b123" />
+        <option name="url" value="https://github.com/SanjeethDev/Tictactoe.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -44,6 +60,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/SanjeethDev/IdeaProjects/Tictactoe/src/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -96,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717170751397</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finalization of the game">
+      <option name="closed" value="true" />
+      <created>1717249451639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717249451639</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +151,7 @@
     <MESSAGE value="Created the board layout&#10;Mapped what data is needed" />
     <MESSAGE value="Winning condition function validation implemented" />
     <MESSAGE value="Fixed column validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed column validation" />
+    <MESSAGE value="Finalization of the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalization of the game" />
   </component>
 </project>

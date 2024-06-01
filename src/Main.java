@@ -1,4 +1,3 @@
-import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -117,12 +116,12 @@ public class Main {
                 System.out.println(board.horizontalLine(16, '='));
                 System.out.println(board.horizontalLine(6, ' ')+ result + " Won");
                 System.out.println(board.horizontalLine(16, '='));
-                break turns;
+                break;
             } else if (result.equals("Tie") && turn > 8) {
                 System.out.println(board.horizontalLine(16, '='));
                 System.out.println(result);
                 System.out.println(board.horizontalLine(16, '='));
-                break turns;
+                break;
             }
         }
     }
